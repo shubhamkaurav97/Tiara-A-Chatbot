@@ -10,29 +10,31 @@ The downside of using Rasa is that, to develop assistant, one must have coding k
 
 ## What does this Robot is capable of?
 - answer basic questions on COVID-19 like what, when, how, additionally it can handle smalltalk, chit-chat
-- capable of answering questions like nearest tesing centers, Hospitals, Free food facility, nearby shelter homes
-- Can provide statistics based on districts or states in India
+- capable of answering questions like number of cases of in States , Union Territories and Countries of the world.
+- Can provide statistics based on states in India and different countries of th world.
 - Send mail to the user with all the details
-- stores entire chat in MongoDB database
 
 ## Architecture
 
 USER-->INTENT
-INTENT--> STORY <-- UTTERENCE
-  |            
+INTENT--> STORY <-- UTTERENCE |            
 ENTITY
 INTENT--> STORY <--> CUSTOM ACTIONS & FORMS --> EXTERNAL API|DATABASE
-
-## Database Being Used
-MongoDB
-DB Name: covid19db
 
 language: "en"
 
 ## Actions and Forms
-action_facility_search is used to query data from all external APIs to get details like hospitals, test centers, shelter homes, statistical information
+action_corona_tracker is used to query data from an external API to get details like TotalConfirmed Cases, TotalActive Cases, TotalDeaths, and time and date of last update of the details for 34 states and union territories of India. 
 
-user_form is used to track details from the user: name, email, mobile number, location
+action_world_corona is used to query data from an external API to get details like TotalConfirmed Cases, TotalActive Cases, TotalDeaths, and time and date of last update of the details for 184 different countries of the world.
+
+action_world_deathrate is used to query data from an external API to get details like TotalConfirmed Cases, TotalActive Cases, TotalDeaths, and give back Death Rate for 184 different countries of the world.
+
+action_State_death_rate is used to query data from an external API to get details like TotalConfirmed Cases, TotalActive Cases, TotalDeaths, and give back Death Rate for 34 states and union territories of India.
+
+action_world_Recoveryrate is used to query data from an external API to get details like TotalConfirmed Cases, TotalActive Cases, TotalDeaths, and give back Recovery Rate for 184 different countries of the world.
+
+action_State_Recovery_rate is used to query data from an external API to get details like TotalConfirmed Cases, TotalActive Cases, TotalDeaths, and give back Recovery Rate for 34 states and union territories of India.
 
 ## Model Pipeline and Policies used
 
@@ -60,7 +62,7 @@ policies:
   - name: FormPolicy
 
 ## Source Code GitHub Link:
-all codes are available in GitHub Page: https://github.com/tuhinssam/covid19-rasa-chatbot
+all codes are available in GitHub Page: https://github.com/Shubhamwastaken/Tiara-A-Chatbot
 
 ## How to run the project
  # create a virtual environment
