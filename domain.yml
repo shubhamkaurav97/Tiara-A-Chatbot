@@ -1,0 +1,635 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- bot_challenge
+- corona_intro
+- corona_spread
+- corona_food_spread
+- warm_weather
+- high_risk
+- bot_notahuman
+- happy_to_help
+- what_name
+- corona_state
+- fine
+- what_animals
+- animals
+- medicines_therapies
+- antibiotics
+- likely_to_catch
+- feces
+- no_symptoms
+- spread_through_air
+- protective_measure_14days
+- package
+- anything_i_shouldn't_do
+- surface
+- incubation_period
+- dispose_mask
+- mask
+- sars
+- vaccine
+- protection
+- symptoms
+- safe_to_travel
+- corona_for_life
+- 5g
+- houseflies
+- hydroxychloroquine
+- Thermal_scanner
+- corona_country
+- corona_global
+- criteria_for_test
+- vomiting_and_diarrhea
+- coronavirus_229E
+- Corona_free_country
+- community_transmission
+- coronavirus_family
+- dangerous_coronavirus
+- plasma_therapy
+- most_affected_states
+- least_affected_states
+- features
+- data_correct
+- have_symptoms
+- diff_isolation_quarantine
+- diff_mask
+- face_shield
+- ppe
+- gloves
+- country_deathrate
+- corona_state_deathrate
+- corona_globaldeathrate
+- country_recoveryrate
+- corona_state_recoveryrate
+- corona_globalrecoveryrate
+- who_developed_you
+- okay
+- how_safe_cloth_mask
+entities:
+- state
+- Country
+- Global
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_goodbye:
+  - text: GoodBye. Have a nice day ahead.
+  utter_ok:
+  - text: So, is there anything else that I can help you with.
+  utter_who_developed_you:
+  - text: 'I am created and managed by a Team of Three Members : Shubham Kaurav,
+      Alka Patel and Sunay Kumar Jain under the guidance of Mr. Mukesh Azad (Asst. Professor, Department of Computer Science, SATI, Vidisha).'
+  utter_what_name:
+  - text: My name is Tiara.
+  utter_fine:
+  - text: So how can I help you?
+  utter_animals:
+  - text: "At this time, there is no evidence that animals play a significant role\
+      \ in spreading the virus that causes COVID-19. Based on the limited information\
+      \ available to date, the risk of animals spreading COVID-19 to people is considered\
+      \ to be low. A small number of pets have been reported to be infected with the\
+      \ virus that causes COVID-19, mostly after contact with people with COVID-19.\n\
+      Pets have other types of coronaviruses that can make them sick, like canine\
+      \ and feline coronaviruses. These other coronaviruses cannot infect people and\
+      \ are not related to the current COVID-19 outbreak.\nHowever, since animals\
+      \ can spread other diseases to people, it’s always a good idea to practice healthy\
+      \ habits around pets and other animals, such as washing your hands and maintaining\
+      \ good hygiene."
+  utter_what_animals:
+  - text: "We don’t know for sure which animals can be infected with the virus that\
+      \ causes COVID-19. WHO is aware of a small number of pets, including dogs and\
+      \ cats, reported to be infected with the virus that causes COVID-19, mostly\
+      \ after close contact with people with COVID-19. A tiger at a zoo in New York\
+      \ has also tested positive for the virus.\nRecent research shows that ferrets,\
+      \ cats, and golden Syrian hamsters can be experimentally infected with the virus\
+      \ and can spread the infection to other animals of the same species in laboratory\
+      \ settings. Pigs, chickens, and ducks did not become infected or spread the\
+      \ infection based on results from these studies. Data from one study suggested\
+      \ dogs are not as likely to become infected with the virus as cats and ferrets.\
+      \ These findings were based on a small number of animals, and do not show whether\
+      \ animals can spread infection to people.\nAt this time, there is no evidence\
+      \ that animals play a significant role in spreading the virus that causes COVID-19.\
+      \ Based on the limited information available to date, the risk of animals spreading\
+      \ COVID-19 to people is considered to be low. Further studies are needed to\
+      \ understand if and how different animals could be affected by the virus that\
+      \ causes COVID-19 and the role animals may play in the spread of COVID-19."
+  utter_medicines_therapies:
+  - text: While some western, traditional or home remedies may provide comfort and
+      alleviate symptoms of COVID-19, there is no evidence that current medicine can
+      prevent or cure the disease. We does not recommend self-medication with any
+      medicines, including antibiotics, as a prevention or cure for COVID-19. However,
+      there are several ongoing clinical trials that include both western and traditional
+      medicines. We will continue to provide updated information as soon as clinical
+      findings are available.
+  utter_antibiotics:
+  - text: No. Antibiotics do not work against viruses, they only work on bacterial
+      infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics
+      should not be used as a means of prevention or treatment of COVID-19. They should
+      only be used as directed by a physician to treat a bacterial infection.
+  utter_likely_to_catch:
+  - text: The risk depends on where you are - and more specifically, whether there
+      is a COVID-19 outbreak unfolding there. For most people in most locations the
+      risk of catching COVID-19 is still low. However, there are now places around
+      the world (cities or areas) where the disease is spreading. For people living
+      in, or visiting, these areas the risk of catching COVID-19 is higher. Governments
+      and health authorities are taking vigorous action every time a new case of COVID-19
+      is identified. Be sure to comply with any local restrictions on travel, movement
+      or large gatherings. Cooperating with disease control efforts will reduce your
+      risk of catching or spreading COVID-19. COVID-19 outbreaks can be contained
+      and transmission stopped, as has been shown in China and some other countries.
+      Unfortunately, new outbreaks can emerge rapidly. It’s important to be aware
+      of the situation where you are or intend to go.
+  utter_feces:
+  - text: The risk of catching COVID-19 from the feces of an infected person appears
+      to be low. While initial investigations suggest the virus may be present in
+      feces in some cases, spread through this route is not a main feature of the
+      outbreak. The ongoing research on the ways COVID-19 is spread and will continue
+      to share new findings. Because this is a risk, however, it is another reason
+      to clean hands regularly, after using the bathroom and before eating.
+  utter_no_symptoms:
+  - text: The main way the disease spreads is through respiratory droplets expelled
+      by someone who is coughing. The risk of catching COVID-19 from someone with
+      no symptoms at all is very low. However, many people with COVID-19 experience
+      only mild symptoms. This is particularly true at the early stages of the disease.
+      It is therefore possible to catch COVID-19 from someone who has, for example,
+      just a mild cough and does not feel ill.A mathematical model from a 2020 study
+      supports this, suggesting that 40–80% of transmission stems from those showing
+      no symptoms.
+  utter_spread_through_air:
+  - text: Studies to date suggest that the virus that causes COVID-19 is mainly transmitted
+      through contact with respiratory droplets rather than through the air.
+  utter_anything_i_shouldn't_do:
+  - text: "The following measures ARE NOT effective against COVID-2019 and can be\
+      \ harmful :- \n1. Smoking \n2. Wearing multiple masks 3. Taking antibiotics\
+      \ without prescription. In any case, if you have fever, cough and difficulty\
+      \ breathing seek medical care early to reduce the risk of developing a more\
+      \ severe infection and be sure to share your recent travel history with your\
+      \ health care provider."
+  utter_package:
+  - text: Yes. The likelihood of an infected person contaminating commercial goods
+      is low and the risk of catching the virus that causes COVID-19 from a package
+      that has been moved, travelled, and exposed to different conditions and temperature
+      is also low.
+  utter_surface:
+  - text: The most important thing to know about coronavirus on surfaces is that they
+      can easily be cleaned with common household disinfectants that will kill the
+      virus. But it is still not certain how long the virus that causes COVID-19 survives
+      on surfaces, but it seems to behave like other corona viruses. Studies suggest
+      that corona viruses (including preliminary information on the COVID-19 virus)
+      may persist on surfaces for a few hours or up to several days. This may vary
+      under different conditions (e.g. type of surface, temperature or humidity of
+      the environment). If you think a surface may be infected, clean it with simple
+      disinfectant to kill the virus and protect yourself and others. Clean your hands
+      with an alcohol-based hand rub or wash them with soap and water. Avoid touching
+      your eyes, mouth, or nose.
+  utter_incubation_period:
+  - text: The “incubation period” means the time between catching the virus and beginning
+      to have symptoms of the disease. Most estimates of the incubation period for
+      COVID-19 range from 1-14 days, most commonly around five days. These estimates
+      will be updated as more data become available.
+  utter_dispose_mask:
+  - text: "1. Remember, a mask should only be used by health workers, care takers,\
+      \ and individuals with respiratory symptoms, such as fever and cough.\n2. Before\
+      \ touching the mask, clean hands with an alcohol-based hand rub or soap and\
+      \ water. \n3. Take the mask and inspect it for tears or holes.\n4. Orient which\
+      \ side is the top side (where the metal strip is).\n5. Ensure the proper side\
+      \ of the mask faces outwards (the coloured side).\n6. Place the mask to your\
+      \ face. Pinch the metal strip or stiff edge of the mask so it moulds to the\
+      \ shape of your nose. \n7. Pull down the mask’s bottom so it covers your mouth\
+      \ and your chin.\n 8. After use, take off the mask; remove the elastic loops\
+      \ from behind the ears while keeping the mask away from your face and clothes,\
+      \ to avoid touching potentially contaminated surfaces of the mask.\n 9. Discard\
+      \ the mask in a closed bin immediately after use.\n 10. Perform hand hygiene\
+      \ after touching or discarding the mask – Use alcohol-based hand rub or, if\
+      \ visibly soiled, wash your hands with soap and water."
+  utter_mask:
+  - text: "Only wear a mask if you are ill with COVID-19 symptoms (especially coughing)\
+      \ or looking after someone who may have COVID-19. Disposable face mask can only\
+      \ be used once. If you are not ill or looking after someone who is ill then\
+      \ you are wasting a mask. There is a world-wide shortage of masks, so We urge\
+      \ people to use masks wisely. We advises rational use of medical masks to avoid\
+      \ unnecessary wastage of precious resources and mis-use of masks The most effective\
+      \ ways to protect yourself and others against COVID-19 are to frequently clean\
+      \ your hands, cover your cough with the bend of elbow or tissue and maintain\
+      \ a distance of at least 1 meter (3 feet) from people who are coughing or sneezing.\
+      \ 4 Types of masks available and is recommended are :- \n 1. Surgical Mask \n\
+      \ 2. N95 and FFP1 masks \n 3.Activated Carbon Masks \n 4.Cloth or sponge masks"
+  utter_sars:
+  - text: No. The virus that causes COVID-19 and the one that caused the outbreak
+      of Severe Acute Respiratory Syndrome (SARS) in 2003 are related to each other
+      genetically, but the diseases they cause are quite different. SARS was more
+      deadly but much less infectious than COVID-19. There have been no outbreaks
+      of SARS anywhere in the world since 2003.
+  utter_vaccine:
+  - text: Not yet. To date, there is no vaccine and no specific antiviral medicine
+      to prevent or treat COVID-2019. However, those affected should receive care
+      to relieve symptoms. People with serious illness should be hospitalized. Most
+      patients recover thanks to supportive care. Possible vaccines and some specific
+      drug treatments are under investigation. They are being tested through clinical
+      trials. The most effective ways to protect yourself and others against COVID-19
+      are to frequently clean your hands, cover your cough with the bend of elbow
+      or tissue, and maintain a distance of at least 1 meter (3 feet) from people
+      who are coughing or sneezing
+  utter_protection:
+  - text: "Stay aware of the latest information on the COVID-19 outbreak, available\
+      \ on the national,state and local public health authority. Many countries around\
+      \ the world have seen cases of COVID-19 and several have seen outbreaks. Authorities\
+      \ in China and some other countries have succeeded in slowing or stopping their\
+      \ outbreaks. However, the situation is unpredictable so check regularly for\
+      \ the latest news. You can reduce your chances of being infected or spreading\
+      \ COVID- 19 by taking some simple precautions :-\n1. Regularly and thoroughly\
+      \ clean your hands with an alcohol-based hand rub or wash them with soap and\
+      \ water. Why? Washing your hands with soap and water or using alcohol-based\
+      \ hand rub kills viruses that may be on your hands.\n2. Maintain at least 1\
+      \ metre (3 feet) distance between yourself and anyone who is coughing or sneezing.\
+      \ Why? When someone coughs or sneezes they spray small liquid droplets from\
+      \ their nose or mouth which may contain virus. If you are too close, you can\
+      \ breathe in the droplets, including\the COVID-19 virus if the person coughing\
+      \ has the disease.\n3. Avoid touching yes, nose and mouth. Why? Hands touch\
+      \ many surfaces and can pick up viruses. Once contaminated, hands can transfer\
+      \ the virus to your eyes, nose or mouth. From there, the virus can enter your\
+      \ body and can make you sick.\n4. Make sure you, and the people around you,\
+      \ follow good respiratory hygiene. This means covering your mouth and nose with\
+      \ your bent elbow or tissue when you cough or sneeze. Then dispose of the used\
+      \ tissue immediately. Why? Droplets spread virus. By following good respiratory\
+      \ hygiene you protect the people around you from viruses such as cold, flu and\
+      \ COVID-19. \n5. Stay home if you feel unwell. If you have a fever, cough and\
+      \ difficulty breathing, seek medical attention and call in advance. Follow the\
+      \ directions of your local health authority. Why? National and local authorities\
+      \ will have the most up to date information on the situation in your area. Calling\
+      \ in advance will allow your health care provider to quickly direct you to the\
+      \ right health facility. This will also protect you and help prevent spread\
+      \ of viruses and other infections.\n6. Keep up to date on the latest COVID-19\
+      \ hotspots (cities or local areas where COVID-19 is spreading widely). If possible,\
+      \ avoid traveling to places – especially if you are an older person or have\
+      \ diabetes, heart or lung disease. Why? You have a higher chance of catching\
+      \ COVID-19 in one of these areas."
+  utter_symptoms:
+  - text: The most common symptoms of COVID-19 are fever, tiredness, and dry cough.
+      Some patients may have aches and pains, nasal congestion, runny nose, sore throat
+      or diarrhea. These symptoms are usually mild and begin gradually. Some people
+      become infected but don’t develop any symptoms and don't feel unwell. Most people
+      (about 80%) recover from the disease without needing special treatment. Around
+      1 out of every 6 people who gets COVID-19 becomes seriously ill and develops
+      difficulty breathing. Older people, and those with underlying medical problems
+      like high blood pressure, heart problems or diabetes, are more likely to develop
+      serious illness. People with fever, cough and difficulty breathing should seek
+      medical attention.
+  utter_protective_measure_14days:
+  - text: "1. Self-isolate by staying at home if you begin to feel unwell, even with\
+      \ mild symptoms such as headache, low grade fever (37.3 C or above) and slight\
+      \ runny nose, until you recover. If it is essential for you to have someone\
+      \ bring you supplies or to go out, e.g. to buy food, then wear a mask to avoid\
+      \ infecting other people. Why? Avoiding contact with others and visits to medical\
+      \ facilities will allow these facilities to operate more effectively and help\
+      \ protect you and others from possible COVID-19 and other viruses.\n2. If you\
+      \ develop fever, cough and difficulty breathing, seek medical advice promptly\
+      \ as this may be due to a respiratory infection or other serious condition.\
+      \ Call in advance and tell your provider of any recent travel or contact with\
+      \ travelers. Why? Calling in advance will allow your health care provider to\
+      \ quickly direct you to the right health facility. This will also help to prevent\
+      \ possible spread of COVID-19 and other viruses."
+  utter_safe_to_travel:
+  - text: "The government has asked people to avoid public transport if at all possible\
+      \ to help general public maintain distance with limited capacity, and keep the\
+      \ public transport for those who need it most. If you need to travel by Indian\
+      \ National Rail or public buses please try to travel Off-Peak, keep a 2-metre\
+      \ distance from others, use a face covering, and carry hand sanitiser or wash\
+      \ your hands.\nIn turn, Indian Railway and Public Bus Transport companies will\
+      \ do everything possible to keep passengers safe, including :-\n1. More frequent\
+      \ and thorough cleaning than normal on trains, buses and at stations or stops.\
+      \ \n2. Giving clear safety guidance on journeys, and \n3. Make extra train and\
+      \ bus carriages available whenever possible.\nIf your journey is necessary and\
+      \ you need to travel by Indian National Rail, please remember that railway stations\
+      \ may be busy and leave plenty of time for your journey."
+  utter_corona_for_life:
+  - text: Most of the people who catch COVID-19 can recover and eliminate the virus
+      from their bodies. If you catch the disease, make sure you treat your symptoms.
+      If you have cough, fever, and difficulty breathing, seek medical care early
+      - but call your health facility by telephone first. Most patients recover thanks
+      to supportive care.
+  utter_5g:
+  - text: Viruses cannot travel on radio waves/mobile networks. COVID-19 is spreading
+      in many countries that do not have 5G mobile networks. COVID-19 is spread through
+      respiratory droplets when an infected person coughs, sneezes or speaks. People
+      can also be infected by touching a contaminated surface and then their eyes,
+      mouth or nose.
+  utter_houseflies:
+  - text: To date, there is no evidence or information to suggest that the COVID-19
+      virus transmitted through houseflies. The virus that cause COVID-19 spreads
+      primarily through droplets generated when an infected person coughs, sneezes
+      or speaks. You can also become infected by touching a contaminated surface and
+      then touching your eyes, nose or mouth before washing your hands. To protect
+      yourself, keep at least 1-metre distance from others and disinfect frequently-touched
+      surfaces. Clean your hands thoroughly and often and avoid touching your eyes,
+      mouth and nose.
+  utter_hydroxychloroquine:
+  - text: While several drug trials are ongoing, there is currently no proof that
+      hydroxychloroquine or any other drug can cure or prevent COVID-19. The misuse
+      of hydroxychloroquine can cause serious side effects and illness and even lead
+      to death. WHO is coordinating efforts to develop and evaluate medicines to treat
+      COVID-19.
+  utter_Thermal_scanner:
+  - text: Thermal scanners are effective in detecting people who have a fever (i.e.
+      have a higher than normal body temperature). They cannot detect people who are
+      infected with COVID-19. There are many causes of fever. Call your healthcare
+      provider if you need assistance or seek immediate medical care if you have fever
+      and live in an area with malaria or dengue.
+  utter_gloves:
+  - text: WHO(World Health Organization) recommends wearing gloves when you are cleaning
+      or caring for someone who is sick. In most other situations, like running errands,
+      wearing gloves is not necessary, instead practice washing your hands with soap
+      and water for 20 seconds (or using a hand sanitizer with at least 60% alcohol)
+      Disposable gloves are highly recommended while taking care of sick or if you
+      using for the protection of yourself. Wearing gloves outside of these instances
+      (for example, when using a shopping cart or using an ATM) will not necessarily
+      protect you from getting COVID-19 and may still lead to the spread of germs.
+  utter_ppe:
+  - text: "Personal Protective Equipments (PPEs) are protective gears designed to\
+      \ safeguard the health of workers by minimizing the exposure to a biological\
+      \ agent. Components of PPE are goggles, face-shield (Google and face shield\
+      \ work similar), mask, gloves, coverall/gowns (with or without aprons) head\
+      \ cover and shoe cover.\n The price of PPE kit start from Rs. 200 and depends\
+      \ on the component you want to add or remove."
+  utter_face_shield:
+  - text: "It is proven and is advised by many health experts that face shield is\
+      \ better than mask. It is reusable by disinfecting it every time or washed.\
+      \ It is comfortable to breathe in and prevent wearer to touch their face. It\
+      \ reinforce the importance of physical distancing. But to get complete protection,\
+      \ it should extend to below the chin. It should also cover the ears there should\
+      \ be no exposed gap between the forehead and the shield's headpiece. \nPrice\
+      \ of face shield start from Rs.70. \nGoogles also work similar as face shield,\
+      \ but can only cover eyes and some extent to ears. Masks are worn alongwith\
+      \ Goggles."
+  utter_diff_mask:
+  - text: "There are 4 major types of mask available and you should wear mask according\
+      \ to places you go. \n 1. SURGICAL MASK: commonly available form of masks in\
+      \ the market, surgical masks protect a person against large splashes of droplets,\
+      \ water, sprays and used in medical facilities. While they do cover your mouth,\
+      \ surgical masks can't really protect you from catching or transmitting the\
+      \ coronavirus or any such microbe in the air, since it has loose gaps which\
+      \ can help the germs crawl in. A high-grade surgical mask can stop the transmission\
+      \ of different kinds of viruses (up to 80-90%), especially if used by a person\
+      \ who is sick. If the wearer coughs or sneezes, the surgical mask will help\
+      \ collect the larger particles expelled. The price of surgical mask is between\
+      \ Rs.1 to Rs. 20. \n2. N95 and FFP1: Masks with N95 rating filter 95% of particles\
+      \ 0.3 microns or larger in diameter, roughly the size of a single virus and\
+      \ include PM 2.5. Some masks also have an attachment called the exhalation valve,\
+      \ which can filter out humidity build-up and is best for those having suffocation\
+      \ problem. Compared to all other masks, N95 masks offer the highest level of\
+      \ protection Price of N95 mask start from Rs.150 and KN95 mask Rs. 60 (similar\
+      \ to N95 with little different in leak of exhalation valve. N95 is better than\
+      \ KN 95. Both mask come with and without exhalation valve.) \n FFP1 masks are\
+      \ considered an alternative to respiratory masks, such as the N95 ones. FFP1\
+      \ masks protect a person from breathing in particles of more hazardous quality.\
+      \ Price of FFP1 mask start from Rs. 30. \n3. ACTIVATED CARBON MASKS: these masks\
+      \ contain an activated carbon filter, which help collect and filter out the\
+      \ pollutants and germs and breathe in purer air. these masks work very well\
+      \ in fighting pollution and tiny particles like bacteria and fungi which spread\
+      \ through the air we breathe in, and thereby, prevent allergies. However, they\
+      \ do not work exceptionally well in fighting or preventing viruses like COVID-19\
+      \ from coming in contact. They can only trap a minuscule number of viruses (10-20%)\
+      \ and hence, may not be the best choice right now. The price starts from Rs.40.\
+      \ \n 4. CLOTH MASKS: Homemade masks offer LESSER protection than surgical or\
+      \ respirator masks. However, as the WHO guidelines read, they can help a person\
+      \ keep the face area clean and prevent the spread of nasty germs and other contagious\
+      \ viruses. Sanitization and disinfecting are crucial steps which can prevent\
+      \ and stop the spread of coronavirus. Cloth and sponge masks filter out about\
+      \ 50% of bacteria and dust pollutants."
+  utter_how_safe_cloth_mask:
+  - text: "Homemade masks offer LESSER protection than surgical or\
+      \ respirator masks. However, as the WHO guidelines read, they can help a person\
+      \ keep the face area clean and prevent the spread of nasty germs and other contagious\
+      \ viruses. Sanitization and disinfecting are crucial steps which can prevent\
+      \ and stop the spread of coronavirus. Cloth and sponge masks filter out about\
+      \ 50% of bacteria and dust pollutants."
+  utter_diff_isolation_quarantine:
+  - text: Quarantine means restricting activities or separating people who are not
+      ill themselves but may have been exposed to COVID-19. The goal is to prevent
+      spread of the disease at the time when people just develop symptoms. Whereas
+      isolation means separating people who are ill with symptoms of COVID-19 and
+      may be infectious to prevent the spread of the disease.
+  utter_have_symptoms:
+  - text: " If you have minor symptoms, such as a slight cough or a mild fever, there\
+      \ is generally no need to seek medical care. Stay at home, self-isolate and\
+      \ monitor your symptoms. \n However, if you live in an area with malaria or\
+      \ dengue fever it is important that you do not ignore symptoms of fever. Seek\
+      \ medical help. \n Seek immediate medical care if you have difficulty breathing\
+      \ or pain/pressure in the chest. If possible, call your health care provider\
+      \ in advance, so he/she can direct you to the right health facility."
+  utter_data_correct:
+  - text: The coronavirus(COVID-19) data shown here by me is provided by api.covid19api.com/summary
+      which collects data from Johns Hopkins Coronavirus Resource Center Website and
+      api.covid19india.org which collects data from state bulletins and official handles.
+  utter_features:
+  - text: Currently, I can provide you Coronavirus(COVID-19) stats of 184 countries
+      and 34 States and Union Territories of India. Along with this, I can also reply
+      back to different coronavirus queries of yours.
+  utter_least_affected_states:
+  - text: Andaman and Nicobar Islands is the least affected Union Territory whereas
+      Meghalaya is the least affected State of India.
+  utter_most_affected_states:
+  - text: Maharashtra is the most affected State of India with over 1 Lakh cases.
+  utter_plasma_therapy:
+  - text: "Plasma therapy involves using blood plasma from people who have recovered\
+      \ from COVID-19 and infusing it into patients who currently have the disease.\
+      \ Plasma is the liquid portion of blood that remains when all red and white\
+      \ blood cells and platelets have been removed. It was over a hundred years ago\
+      \ that Emil Behring was awarded the first Nobel prize for physiology and medicine\
+      \ for his work demonstrating that plasma could be used to treat diphtheria.\
+      \ \nWe now know that the key component of plasma for treating infections is\
+      \ antibodies. Antibodies are Y-shaped proteins that are highly specific for\
+      \ whichever infection a person has previously encountered. They are produced\
+      \ in vast quantities by B cells of our immune system in order to bind to the\
+      \ invading virus and then target it for destruction. The concept of vaccination\
+      \ relies on stimulating antibody production to infections not yet met. In contrast,\
+      \ using convalescent plasma involves the transfer of antibodies from donors\
+      \ who have already mounted an immune response, thus offering immediate (but\
+      \ transient) protection to the recipient. \nWorldwide there are over 60 clinical\
+      \ trials actively recruiting COVID-19 patients to study the effect of convalescent\
+      \ plasma. Patients are typically given about 500ml plasma intravenously, and\
+      \ their progress is then carefully monitored. Many studies are using plasma\
+      \ from non-infected patients as the placebo arm of the trial, to ensure that\
+      \ any benefits identified are indeed specific for SARS-CoV-2 antibodies."
+  utter_dangerous_coronavirus:
+  - text: "Covid-19 is transmitted much more readily between humans than its closest\
+      \ relation, Sars, which caused outbreaks of serious disease in a few countries\
+      \ in 2003. The new coronavirus is, however, less dangerous to most people it\
+      \ infects than Sars. Computer modelling suggests that each new Covid-19 case\
+      \ infects 2.5 other people on average when no effort is made to keep people\
+      \ apart. The Chinese authorities have greatly reduced this “reproduction number”\
+      \ through drastic action to isolate cases and trace their contacts — and the\
+      \ rest of the world is rapidly introducing social distancing measures. \nThe\
+      \ virus has caused severe respiratory disease in about 20 per cent of patients\
+      \ and killed more than 3 per cent of confirmed cases. Sars killed 10 per cent\
+      \ of infected individuals. Older people, whose immune defences have declined\
+      \ with age, as well as those with underlying health conditions, are much more\
+      \ vulnerable than the young. \nBut fatality rates are hard to estimate in the\
+      \ early stages of an epidemic and depend on the medical care given to patients.\
+      \ For example, ventilators save lives by enabling people with pneumonia to breathe.\
+      \ Most experts believe the current fatality rate is exaggerated by serious under-diagnosis\
+      \ of mild cases; the best current estimate is that Covid-19 will kill around\
+      \ 1 per cent of those infected in a population with good healthcare. \nFor comparison,\
+      \ seasonal flu has a mortality rate below 0.1 per cent but it infects so many\
+      \ people that it results in about 400,000 deaths a year worldwide. Spanish flu\
+      \ infected an estimated 500m people and killed 50m worldwide in 1918-19. Hypothetically,\
+      \ if Covid-19 affected half the world’s current population over the course of\
+      \ a year with a 1 per cent fatality rate, the death toll would be 35m — substantially\
+      \ increasing the number of deaths worldwide, which is around 60m for all causes\
+      \ in a typical year."
+  utter_coronavirus_family:
+  - text: Coronaviruses are a large family of viruses that are known to cause illness
+      ranging from the common cold to more severe diseases such as Middle East Respiratory
+      Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS).
+  utter_community_transmission:
+  - text: "According to the World Health Organisation (WHO), community transmission\
+      \ “is evidenced by the inability to relate confirmed cases through chains of\
+      \ transmission for a large number of cases, or by increasing positive tests\
+      \ through sentinel samples (routine systematic testing of respiratory samples\
+      \ from established laboratories)”. \nIn other words, community transmission\
+      \ or spread is said to be taking place when the source of the contagion is not\
+      \ known, i.e. when one is unable to trace an infection back to a carrier who\
+      \ has travelled in an affected area, or through contact with a person who has\
+      \ the disease. \nA state of community spread implies that the virus is now circulating\
+      \ in the community, and can infect people with no history — either of travel\
+      \ to or contact with affected people and areas. At this stage, it is theoretically\
+      \ possible for everyone to catch the infection."
+  utter_Corona_free_country:
+  - text: "List of nations that have been declared as COVID-19 free :- \n1. New Zealand\
+      \ on 8 June 2020 \n2. Tanzania on 7 June 2020 \n3. Vatican on 6 June 2020 \n\
+      4. Fiji on 1st week of June 2020 \n5. Montenegro on 24 May 2020 \n6. St Kitts\
+      \ and Nevis on 19 May 2020 \n7. Seychelles on 18 May 2020 \n8. Timor-Leste on\
+      \ 15 May 2020 \n9. Papua New Guinea on 4 May 2020"
+  utter_coronavirus_229E:
+  - text: CoV229e is one of several coronaviruses that cause common colds. Biologically
+      related to SARS-CoV-2 (the cause of COVID-19), but different viruses.
+  utter_vomiting_and_diarrhea:
+  - text: Nausea, vomiting, and/or diarrhea occur fairly frequently early in the infection,
+      but are rarely if ever the only symptoms. If cough and fever don't develop within
+      a day or two after vomiting or diarrhea, probably it isn't COVID-19.
+  utter_criteria_for_test:
+  - text: Real vs. textbook. Real-life criteria is different because we don't have
+      enough tests, supplies, or medical staff around the world at this time (June
+      2020). Textbook criteria are suspected COVID in hospitalized persons or in those
+      with underlying medical conditions; or persons who got symptoms less than 14
+      days after (1) contact with a suspect or confirmed COVID patient or (2) travel
+      through high-risk COVID area.
+  utter_corona_intro:
+  - text: Coronaviruses are a group of related viruses that cause diseases in mammals
+      and birds. In humans, coronaviruses cause respiratory tract infections that
+      can be mild, such as some cases of the common cold (among other possible causes,
+      predominantly rhinoviruses), and others that can be lethal, such as SARS, MERS,
+      and COVID-19
+  utter_corona_food_spread:
+  - text: Coronaviruses are generally thought to be spread from person-to-person through
+      respiratory droplets. Currently there is no evidence to support transmission
+      of COVID-19 associated with food. Before preparing or eating food it is important
+      to always wash your hands with soap and water for 20 seconds for general food
+      safety. Throughout the day wash your hands after blowing your nose, coughing
+      or sneezing, or going to the bathroom.
+  utter_high_risk:
+  - text: Older adults and people of any age who have serious underlying medical conditions
+      may be at higher risk for more serious complications from COVID-19. These people
+      who may be at higher risk of getting very sick from this illness, includes;
+      Older adults, People who have serious underlying medical conditions like...
+      Heart disease, Diabetes, Lung disease.
+  utter_bot_challenge:
+  - text: Yes, I am Tiara. A Chatbot designed to help you with Coronavirus (Covid
+      -19) queries.
+  utter_bot_notahuman:
+  - text: No, I am Tiara. A Chatbot designed to help you with Coronavirus (Covid -19)
+      queries.
+  utter_happy_to_help:
+  - text: I'm very pleased that I was able to help you.
+  utter_warm_weather:
+  - text: It is not yet known whether weather and temperature impact the spread of
+      COVID-19. Some other viruses, like the common cold and flu, spread more during
+      cold weather months but that does not mean it is impossible to become sick with
+      these viruses during other months.  At this time, it is not known whether the
+      spread of COVID-19 will decrease when weather becomes warmer.  There is much
+      more to learn about the transmissibility, severity, and other features associated
+      with COVID-19 and investigations are ongoing.
+  utter_corona_spread:
+  - text: People can catch COVID-19 from others who have the virus. The disease can
+      spread from person to person through small droplets from the nose or mouth which
+      are spread when a person with COVID-19 coughs or exhales. These droplets land
+      on objects and surfaces around the person. Other people then catch COVID-19
+      by touching these objects or surfaces, then touching their eyes, nose or mouth.
+      People can also catch COVID-19 if they breathe in droplets from a person with
+      COVID-19 who coughs out or exhales droplets. This is why it is important to
+      stay more than 1 meter (3 feet) away from a person who is sick.
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_goodbye
+- utter_corona_intro
+- utter_corona_spread
+- utter_corona_food_spread
+- utter_warm_weather
+- utter_high_risk
+- utter_bot_challenge
+- utter_bot_notahuman
+- utter_happy_to_help
+- utter_what_name
+- utter_fine
+- utter_animals
+- utter_what_animals
+- utter_medicines_therapies
+- utter_antibiotics
+- utter_likely_to_catch
+- utter_feces
+- utter_no_symptoms
+- utter_spread_through_air
+- utter_protective_measure_14days
+- utter_symptoms
+- utter_protection
+- utter_vaccine
+- utter_sars
+- utter_mask
+- utter_dispose_mask
+- utter_incubation_period
+- utter_surface
+- utter_package
+- utter_anything_i_shouldn't_do
+- utter_safe_to_travel
+- utter_corona_for_life
+- utter_5g
+- utter_houseflies
+- utter_hydroxychloroquine
+- utter_Thermal_scanner
+- utter_criteria_for_test
+- utter_vomiting_and_diarrhea
+- utter_coronavirus_229E
+- utter_Corona_free_country
+- utter_community_transmission
+- utter_coronavirus_family
+- utter_dangerous_coronavirus
+- utter_plasma_therapy
+- utter_most_affected_states
+- utter_least_affected_states
+- utter_features
+- utter_data_correct
+- utter_have_symptoms
+- utter_diff_isolation_quarantine
+- utter_diff_mask
+- utter_face_shield
+- utter_ppe
+- utter_gloves
+- utter_who_developed_you
+- utter_ok
+- utter_how_safe_cloth_mask
+- action_corona_tracker
+- action_world_corona
+- action_Global_Count
+- action_world_deathrate
+- action_Global_Recovery_rate
+- action_State_Recovery_rate
+- action_world_Recoveryrate
+- action_Global_Death_rate
+- action_State_death_rate
